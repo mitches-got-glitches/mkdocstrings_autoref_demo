@@ -10,7 +10,10 @@ readme = "README.md"
 python = "^3.12"
 mkdocs = "^1.5.3"
 mkdocs-material = "^9.5.9"
-mkdocstrings = "^0.24.0"
+mkdocstrings = {extras = ["python"], version = "^0.24.0"}
+mkdocs-gen-files = "^0.5.0"
+mkdocs-literate-nav = "^0.6.1"
+mkdocs-section-index = "^0.3.8"
 
 
 [tool.poetry.group.test.dependencies]
