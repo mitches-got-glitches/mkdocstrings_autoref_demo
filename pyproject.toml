@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "gandalf"
+version = "0.1.0"
+description = "A short demo following the automatic code reference recipe from mkdocstrings."
+authors = ["mitches-got-glitches <mitch.edmunds@proton.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.9"
+mkdocstrings = "^0.24.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-rP"
